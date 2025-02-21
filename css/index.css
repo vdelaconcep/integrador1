@@ -3,6 +3,34 @@
     box-sizing: border-box;
 }
 
-img {
+.linea_azul {
+    color: darkslateblue;
+    background-color: darkslateblue;
+}
+
+.logo {
+    width: 10%;
+    margin: 1%;
+    margin-left: 2%;
+}
+
+.logo_nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav {
+    margin: 2%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner {
     width: 100%;
 }
+
+footer {
+    background-color: darkslateblue;
+}
+
