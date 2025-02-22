@@ -1,42 +1,48 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.linea_azul {
-    color: darkslateblue;
-    background-color: darkslateblue;
-}
-
-.logo_nav {
+nav {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    border-top: 15px solid;
+    border-color: darkslateblue;
+    padding-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
-.logo {
+#logo {
+    width: 90%;
+}
+
+.nav_logo_home{
     width: 15%;
     max-width: 100px;
-    height: auto;
-    padding-top:0.4%;
-    padding-bottom: 0.4%;
 }
 
-nav {
-    width: 80%;
+.nav_logo_home a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav_paginas {
     display: flex;
     justify-content:space-around;
-    align-items: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-wrap: wrap;
+    width: 85%;
 }
 
-nav a {
-    display:inline-block;
+.nav_paginas a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     font-weight: 700;
+    font-size: 1.2rem;
     text-decoration: none;
+    text-transform: capitalize;
     text-align: center;
 }
 
