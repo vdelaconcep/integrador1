@@ -5,6 +5,8 @@ main {
 }
 
 .tour_card {
+    display: flex;
+    flex-direction: column;
     margin: 1%;
     border: 2px solid;
     border-color: darkslateblue;
@@ -14,6 +16,7 @@ main {
 
 .tour_card img {
     width: 100%;
+    height: 172px;
     padding-top: 1.5%;
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -26,26 +29,25 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card_descripcion {
-    background-color: darkslateblue;
-    border-bottom-right-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
-}
-
-.card_descripcion p {
+.tour_card p {
     padding: 2%;
-    color: white;
+    color: black;
 }
 
 .card_botones {
+    justify-self: flex-end;
+    width: 100%;
+    background-color: darkslateblue;
+    border-bottom-right-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
     text-align: right;
-    margin-right: 4%;
+    padding: 2%;
+    padding-right: 4%;
 }
 
 .card_botones button {
     margin: 1%;
     padding: 1.5%;
-    margin-bottom: 2%;
 }
 
 .info {
