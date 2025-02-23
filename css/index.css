@@ -5,11 +5,12 @@ main {
 }
 
 .tour_card {
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 1%;
     border: 2px solid;
-    border-color: darkslateblue;
+    border-color: midnightblue;
     border-radius: 10px;
     max-width: 310px;
 }
@@ -35,9 +36,8 @@ main {
 }
 
 .card_botones {
-    justify-self: flex-end;
     width: 100%;
-    background-color: darkslateblue;
+    background-color:midnightblue;
     border-bottom-right-radius: 7.5px;
     border-bottom-left-radius: 7.5px;
     text-align: right;
@@ -56,4 +56,8 @@ main {
 
 .comprar {
     background-color:gold
+}
+
+.info:hover, .comprar:hover {
+    text-decoration: underline;
 }
