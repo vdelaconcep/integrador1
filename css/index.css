@@ -9,7 +9,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin: 1%;
-    border: 3px solid;
+    border: 2px solid;
     border-color: midnightblue;
     border-radius: 10px;
     max-width: 310px;
@@ -36,14 +36,15 @@ main {
     color: black;
 }
 
-.card_botones {
+.precio_botones {
     width: 100%;
     text-align: center;
     padding: 2%;
 }
 
-.card_botones button {
+.precio_botones button {
     margin: 1%;
+    margin-top: 2%;
     padding: 1.5%;
 }
 
