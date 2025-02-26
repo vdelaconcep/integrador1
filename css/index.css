@@ -20,7 +20,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin: 1.5%;
-    border: 2px solid;
+    border: 1.5px solid;
     border-color: midnightblue;
     border-radius: 10px;
     max-width: 310px;
