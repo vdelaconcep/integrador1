@@ -20,8 +20,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin: 1.5%;
-    border: 1.5px solid;
-    border-color: midnightblue;
+    border: 2px solid;
+    border-color: #00293F;
     border-radius: 10px;
     max-width: 310px;
 }
@@ -70,19 +70,22 @@ main {
 .precio_botones button {
     margin: 1%;
     padding: 1.5%;
+    border-radius: 5px;
 }
 
 .info {
-    background-color: midnightblue;
+    background-color: #00293F;
     color: white;
 }
 
 .comprar {
-    background-color:gold
+    background-color:#E1AF42
 }
 
 .info:hover, .comprar:hover {
-    text-decoration: underline;
+    background-color: #08A1CF;
+    color:black;
+   /*  font-weight: 900; */
 }
 
 .contiene_boton_arriba {
