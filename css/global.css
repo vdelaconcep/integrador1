@@ -29,7 +29,7 @@ header {
 }
 
 .banner {
-    min-height: 140px;
+    width: 100%;
 }
 
 #logoBS {
