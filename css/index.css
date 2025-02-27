@@ -44,7 +44,28 @@ main {
     color: black;
 }
 
-.precio_botones::before {
+.reserva {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+.precio {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pasajeros {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.comprar {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* .precio_botones::before {
     content: " ";
     display: block;
     width: 100%;
@@ -58,9 +79,7 @@ main {
     padding: 2%;
 }
 
-.precio {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .precio_botones button {
     margin: 1%;
@@ -71,16 +90,16 @@ main {
 .info {
     background-color: #00293F;
     color: white;
-}
+} */
 
 .comprar {
     background-color:#E1AF42
 }
 
-.info:hover, .comprar:hover {
+/* .info:hover, .comprar:hover {
     background-color: #08A1CF;
     color:black;
-}
+} */
 
 .filete {
     width: 100%;
