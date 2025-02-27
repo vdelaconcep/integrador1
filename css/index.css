@@ -1,12 +1,7 @@
 main {
-    text-align: center;
-}
-
-.filetes {
-    width: 100%;
-    max-width: 900px;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tarjetas {
@@ -85,14 +80,19 @@ main {
 .info:hover, .comprar:hover {
     background-color: #08A1CF;
     color:black;
-   /*  font-weight: 900; */
 }
 
-.contiene_boton_arriba {
-    text-align: center;
-    margin: 2%;
+.filete {
+    width: 100%;
+    max-width: 900px;
+    min-width: 500px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 .boton_arriba {
+    width: 120px;
+    height: 40px;
+    margin: 2%;
     padding: 0.5%;
 }
