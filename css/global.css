@@ -43,11 +43,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #105276;
+    background-color:#F3B229;
+    color: #00293F;
 }
 
 #contacto, #nosotros, #paseos {
-    flex-basis: 29%;
+    flex-basis: 15%;
 }
 
 #alta {
