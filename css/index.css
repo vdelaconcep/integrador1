@@ -5,7 +5,6 @@ main {
 }
 
 .cards {
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -19,7 +18,7 @@ main {
     border: 2px solid;
     border-color: #00293F;
     border-radius: 10px;
-    max-width: 320px;
+    max-width: 300px;
 }
 
 .card_img {
@@ -79,7 +78,6 @@ main {
 .filete {
     width: 100%;
     max-width: 900px;
-    min-width: 500px;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }

@@ -1,65 +1,61 @@
-@font-face {
-    font-family: "javanese";
-    src: url(../fonts/javanese-text.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    min-width: 100%;
+}
+
 header {
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+    min-width: 100%;
 }
 
 .barra_superior {
     background-color:#00293F;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
 }
 
-.barra_busqueda {
+/* .barra_busqueda {
     margin: 0.7%;
     margin-right: 1%;
     border-radius: 20px;
     padding-left: 1% ;
     padding-right: 1%;
-}
-
+} */
 
 .banner {
     width: 100%;
 }
 
 #logoBS {
-    width: 7%;
+    width: 15%;
     min-width: 70px;
     height: auto;
-    margin: 0.3%;
-    margin-left: 0.5%;
+    margin: 0.5%;
 }
 
 nav {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 5px solid;
-    border-color: #00293F;
-    margin-bottom: 0.5rem;
 }
 
 nav a {
     display: block;
-    font-family:javanese;
-    font-size: 1.2rem;
-    color: black;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size: 1rem;
+    color: white;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 nav a:hover {
