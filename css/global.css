@@ -18,6 +18,7 @@ header {
     background-color:#00293F;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .barra_busqueda {
@@ -27,6 +28,7 @@ header {
     padding-left: 1% ;
     padding-right: 1%;
 }
+
 
 .banner {
     width: 100%;
@@ -41,6 +43,7 @@ header {
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,4 +71,3 @@ footer {
     color: white;
     padding: 3%;
 }
-
