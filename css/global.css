@@ -4,22 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
-    min-width: 100%;
-}
-
 header {
     display: flex;
     flex-direction: column;
-    margin-right: 0;
-    min-width: 100%;
 }
 
 .barra_superior {
     background-color:#00293F;
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
 }
 
 /* .barra_busqueda {
@@ -30,26 +23,31 @@ header {
     padding-right: 1%;
 } */
 
-.banner {
-    width: 100%;
-}
-
 #logoBS {
-    width: 15%;
+    width: 12%;
     min-width: 70px;
     height: auto;
     margin: 0.5%;
 }
 
+.banner {
+    width: 100%;
+}
+
+
+
 nav {
     width: 80%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
 }
 
 nav a {
     display: block;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100%;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -59,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    font-weight: 900;
+    background-color: gray;
 }
 
 footer {

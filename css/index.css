@@ -15,10 +15,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin: 1.5%;
-    border: 2px solid;
+    max-width: 300px;
+    border: 1.5px solid;
     border-color: #00293F;
     border-radius: 10px;
-    max-width: 300px;
+    box-shadow: 0px 5px 5px gray;
 }
 
 .card_img {
