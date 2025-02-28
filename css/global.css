@@ -12,7 +12,7 @@ header {
 .barra_superior {
     background-color:#00293F;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* .barra_busqueda {
@@ -29,12 +29,6 @@ header {
     height: auto;
     margin: 0.5%;
 }
-
-.banner {
-    width: 100%;
-}
-
-
 
 nav {
     width: 80%;
@@ -58,6 +52,18 @@ nav a {
 
 nav a:hover {
     background-color: gray;
+}
+
+#contacto, #nosotros, #paseos {
+    flex-basis: 27%;
+}
+
+#alta {
+    flex-basis: 19%;
+}
+
+.banner {
+    width: 100%;
 }
 
 footer {

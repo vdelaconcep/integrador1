@@ -11,9 +11,8 @@ main {
 }
 
 .tour_card {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr 75px;
     margin: 1.5%;
     max-width: 300px;
     border: 1.5px solid;
@@ -23,6 +22,7 @@ main {
 }
 
 .card_ancla {
+    grid-row: 1;
     text-decoration: none;
 }
 
@@ -51,6 +51,7 @@ main {
 }
 
 .reserva {
+    grid-row: 2;
     display:grid;
     grid-template: 50% 50% / 50% 50%;
     justify-items: center;
