@@ -23,15 +23,15 @@ header {
     margin-left: 1.5%;
 }
 
-nav {
-    width: 40%;
-    margin-left: 20%;
+#menu{
+    width: 50%;
+    margin-left: 15%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-nav a {
+#menu a, #icono_menu a {
     display: block;
     padding-bottom: 1%;
     padding-top: 1%;
@@ -44,7 +44,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+#menu a:hover {
     border-bottom: 2px solid white;
 }
 
@@ -54,6 +54,25 @@ nav a:hover {
 
 #alta {
     flex-basis: 13%;
+}
+
+#icono_menu {
+    margin: 1%;
+    padding: 1%;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    #icono_menu {
+        display: block;
+    }
 }
 
 .banner {
