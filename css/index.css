@@ -14,16 +14,21 @@ main {
     align-items: center;
 }
 
+/* Foto con título y cuadro de búsqueda: */
+
 .busqueda {
     background: url(../assets/img/background_busqueda.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     width: 100%;
     height: 70vh;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* Título y subtítulo: */
 
 .titulo_subtitulo_principal {
     display: flex;
@@ -37,21 +42,20 @@ main {
     text-align: center;
     font-family: "wide_latin";
     font-size: 3em;
-    font-weight: 500;
     color: white;
     text-shadow: 2px 2px black;
 }
 
 .subtitulo_principal {
     text-align: center;
-    line-height: 102%;
+    line-height: 110%;
     font-family: "javanese";
     font-size: 2em;
     font-weight: 500;
     color: white;
 }
 
-/* Título y subtítulo adaptables a las pantallas: */
+/* Adaptación de título y subtítulo a las pantallas: */
 
 @media (max-width: 600px) {
     .titulo_subtitulo_principal {
@@ -65,9 +69,12 @@ main {
     }
 }
 
+/* Cuadro de búsqueda: */
+
 .busqueda_inputs {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 45%;
+    width: 50%;
+    min-width: 300px;
     height: 48%;
 }
 
