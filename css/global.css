@@ -27,7 +27,7 @@ nav {
 
 #menu{
     width: 40%;
-    margin-right: 30%;
+    margin-right: 40%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -68,10 +68,8 @@ nav {
         right: -100%;
         display: block;
         width: 50%;
-        margin-left: 50%;
         margin-top: 42px;
         background-color: #00293F;
-        justify-self: flex-end;
         transition: all 0.5s;
     }
 
@@ -90,7 +88,7 @@ nav {
     }
 
     #check:checked ~ #menu {
-        right: 0%;
+        right: -40%;
     }
 }
 
