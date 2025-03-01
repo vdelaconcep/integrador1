@@ -34,6 +34,7 @@ main {
 }
 
 .titulo_principal {
+    text-align: center;
     font-family: "wide_latin";
     font-size: 3em;
     font-weight: 500;
@@ -41,6 +42,8 @@ main {
 }
 
 .subtitulo_principal {
+    text-align: center;
+    line-height: 102%;
     font-family: "javanese";
     font-size: 2em;
     font-weight: 500;
@@ -49,27 +52,15 @@ main {
 
 /* Título y subtítulo adaptables a las pantallas: */
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .titulo_subtitulo_principal {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 700px) {
-    .titulo_subtitulo_principal {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 500px) {
-    .titulo_subtitulo_principal {
-            font-size: 10px;
+            font-size: 13px;
         }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 465px) {
     .titulo_subtitulo_principal {
-        font-size: 8px;
+        font-size: 11px;
     }
 }
 
