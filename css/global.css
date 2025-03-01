@@ -12,7 +12,7 @@ header {
 .barra_superior {
     background-color:#00293F;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #logoBS {
@@ -20,10 +20,12 @@ header {
     max-width: 90px;
     height: auto;
     margin: 0.5%;
+    margin-left: 1.5%;
 }
 
 nav {
-    width: 90%;
+    width: 50%;
+    margin-left: 15%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -37,14 +39,13 @@ nav a {
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color:#F3B229;
-    color: #00293F;
+    border-bottom: 2px solid white;
 }
 
 #contacto, #nosotros, #paseos {
