@@ -4,40 +4,41 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.barra_superior {
+nav {
     background-color:#00293F;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    height: 42px;
+    width: 100%;
+}
+
+#enlace_logoBS {
+    display: flex;
+    padding: 0.3%;
+    margin-left: 2%;
+    align-content: center;
 }
 
 #logoBS {
     min-width: 60px;
     max-width: 90px;
     height: auto;
-    margin: 0.5%;
-    margin-left: 1.5%;
 }
 
 #menu{
-    width: 50%;
-    margin-left: 15%;
+    width: 40%;
+    margin-right: 30%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-#menu a, #icono_menu a {
+#menu a {
     display: block;
+    flex-basis: 20%;
     padding-bottom: 1%;
-    padding-top: 1%;
-    width: 100%;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
     color: white;
@@ -48,30 +49,48 @@ header {
     border-bottom: 2px solid white;
 }
 
-#contacto, #nosotros, #paseos {
-    flex-basis: 15%;
-}
-
-#alta {
-    flex-basis: 13%;
-}
-
-#icono_menu {
-    margin: 1%;
-    padding: 1%;
+.menu_responsivo {
+    align-self: center;
     width: 40px;
-    border: 2px solid white;
-    border-radius: 4px;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
     display: none;
 }
 
-@media screen and (max-width: 500px) {
+#check {
+    display: none;
+}
+
+@media (max-width: 800px) {
     #menu {
-        display: none;
+        position: fixed;
+        right: -100%;
+        display: block;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: 42px;
+        background-color: #00293F;
+        justify-self: flex-end;
+        transition: all 0.5s;
     }
 
-    #icono_menu {
+    #menu a {
+        padding: 5% 0;
+    }
+
+    #menu a:hover {
+        border: none;
+        background-color: white;
+        color: #00293F;
+    }
+    
+    .menu_responsivo {
         display: block;
+    }
+
+    #check:checked ~ #menu {
+        right: 0%;
     }
 }
 

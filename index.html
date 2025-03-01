@@ -10,22 +10,22 @@
 </head>
 <body>
     <header>
-        <div class="barra_superior">
-        <img id="logoBS" src="./assets/img/logo_BS.png" alt="Logo BS">
-        <nav id="menu">
-            <a id="paseos" href="./index.html">paseos</a>
-            <a id="alta" href="./pages/alta.html">alta</a>
-            <a id="contacto" href="./pages/contacto.html">contacto</a>
-            <a id="nosotros" href="./pages/nosotros.html">nosotros</a>
+        <nav>
+        <a href="./index.html" id="enlace_logoBS" title="Página principal">
+            <img id="logoBS" src="./assets/img/logo_BS.png" alt="Logo BS">
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu_responsivo">☰</label>
+        <div id="menu">
+            <a href="./pages/alta.html">alta</a>
+            <a href="./pages/contacto.html">contacto</a>
+            <a href="./pages/nosotros.html">nosotros</a>
+        </div>
         </nav>
-        <div id="icono_menu">
-            <a href="#">☰</a>
-        </div>
-        </div>
-        <img class="banner" src="./assets/img/banner.jpg" alt="Banner">
     </header>
-    
+
     <main>
+        <img class="banner" src="./assets/img/banner.jpg" alt="Banner">
         <section class="cards">
             <div class="tour_card">
                 <a class="card_ancla" href="./pages/contacto.html">
