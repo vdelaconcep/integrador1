@@ -1,8 +1,84 @@
+@font-face {
+    font-family: "wide_latin";
+    src: url(../fonts/Nexus_Font.TTF);
+}
+
+@font-face {
+    font-family: "javanese";
+    src: url(../fonts/javanese-text.ttf);
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.busqueda {
+    background: url(../assets/img/background_busqueda.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_subtitulo_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 45%;
+}
+
+.titulo_principal {
+    font-family: "wide_latin";
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+}
+
+.subtitulo_principal {
+    font-family: "javanese";
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+}
+
+/* Título y subtítulo adaptables a las pantallas: */
+
+@media (max-width: 900px) {
+    .titulo_subtitulo_principal {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .titulo_subtitulo_principal {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .titulo_subtitulo_principal {
+            font-size: 10px;
+        }
+}
+
+@media (max-width: 400px) {
+    .titulo_subtitulo_principal {
+        font-size: 8px;
+    }
+}
+
+.busqueda_inputs {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 45%;
+    height: 48%;
+}
+
 
 .cards {
     display: flex;

@@ -8,7 +8,7 @@ nav {
     background-color:#00293F;
     display: flex;
     justify-content: space-between;
-    height: 42px;
+    height: 45px;
     width: 100%;
 }
 
@@ -26,8 +26,7 @@ nav {
 }
 
 #menu{
-    width: 40%;
-    margin-right: 40%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -68,7 +67,7 @@ nav {
         right: -100%;
         display: block;
         width: 50%;
-        margin-top: 42px;
+        margin-top: 45px;
         background-color: #00293F;
         transition: all 0.5s;
     }
@@ -88,7 +87,7 @@ nav {
     }
 
     #check:checked ~ #menu {
-        right: -40%;
+        right: 0%;
     }
 }
 
