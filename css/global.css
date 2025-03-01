@@ -24,8 +24,8 @@ header {
 }
 
 nav {
-    width: 50%;
-    margin-left: 15%;
+    width: 40%;
+    margin-left: 20%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
