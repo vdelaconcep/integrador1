@@ -75,9 +75,9 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     width: 315px;
-    height: 166px;
+    height: 170px;
     display: grid;
-    grid-template: 21% 17% 15% 15% 17% 15% / 70% 30%;
+    grid-template: 19% 17% 15% 15% 17% 17% / 70% 30%;
     padding: 1.5%;
 }
 
@@ -123,12 +123,14 @@ main {
 .input_buscar_por_lugar {
     grid-row: 6;
     grid-column: 1;
+    margin-left: 4%;
+    margin-bottom: 3%;
 }
 
 #boton_buscar_lugar {
     grid-row: 6;
     grid-column: 2;
-    align-self: center;
+    align-self: self-start;
 }
 
 .por_fecha,
