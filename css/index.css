@@ -83,7 +83,7 @@ main {
 }
 
 .titulo_busqueda {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     color: #98B2CF;
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid white;
@@ -127,6 +127,7 @@ main {
 
 .fecha_desde, .fecha_hasta {
     font-size: 0.8em;
+    margin: 2%;
 }
 
 #boton_buscar_fecha {
@@ -150,10 +151,17 @@ main {
 
 /* Adaptación del cuadro de búsqueda a pantallas más grandes */
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .busqueda {
         width: 400px;
         height: 190px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .busqueda {
+        width: 400px;
+        height: 220px;
     }
 }
 
