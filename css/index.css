@@ -139,7 +139,7 @@ main {
 }
 
 .boton_buscar, #boton_buscar_fecha {
-    margin-left: 1%;
+    margin-left: 2%;
     height: 20px;
     width: 50px;
     align-self: self-end;
