@@ -14,9 +14,9 @@ main {
     align-items: center;
 }
 
-/* Foto con título y cuadro de búsqueda: */
+/* Banner con título y cuadro de búsqueda: */
 
-.busqueda {
+.banner {
     background: url(../assets/img/background_busqueda.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -71,13 +71,65 @@ main {
 
 /* Cuadro de búsqueda: */
 
-.busqueda_inputs {
+.busqueda {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 50%;
-    min-width: 300px;
-    height: 48%;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5%;
 }
 
+.titulo_busqueda {
+    margin-bottom: 3%;
+    color: #98B2CF;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid white;
+}
+
+.buscar_por, .buscar_por_fecha {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buscar_por {
+    margin-left: 2%;
+}
+
+.buscar_por_fecha, .buscar_por_lugar {
+    display: flex;
+    justify-self: center;
+    align-self: self-start;
+    margin: 1% 2%;
+}
+
+.fecha_desde, .fecha_hasta {
+    font-size: 0.8em;
+}
+
+.input_buscar_por_lugar {
+    width: 200px;
+}
+
+.boton_buscar {
+    margin-left: 1%;
+    height: 20px;
+    align-self: self-end;
+    background-color: #98B2CF;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* Adaptación del cuadro de búsqueda a pantallas más grandes */
+
+@media (min-width: 700px) {
+    .busqueda {
+        width: 400px;
+    }
+}
+
+/* Sección tarjetas */
 
 .cards {
     display: flex;
