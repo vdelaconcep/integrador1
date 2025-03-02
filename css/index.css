@@ -102,6 +102,7 @@ main {
     justify-self: center;
     align-self: self-start;
     margin: 1% 2%;
+    min-width: 300px;
 }
 
 .fecha_desde, .fecha_hasta {
