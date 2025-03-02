@@ -26,6 +26,7 @@
 
     <main>
         <section class="banner">
+
             <div class="titulo_subtitulo_principal">
                 <h1 class="titulo_principal">
                 BAIRES SUR
@@ -39,23 +40,29 @@
                 <h3 class="titulo_busqueda">
                     Buscá tu paseo
                 </h3>
-                <p class="por_fecha">
+                <p class="buscar_por">
                     Por fecha:
                 </p>
-                <div class="fecha_desde">
-                    <label class="input_fecha" for="fecha_inicio">Desde</label>
-                    <input type="date">
-                </div>
-                <div class="fecha_hasta">
-                    <label class="input_fecha" for="fecha_fin">Hasta</label>
-                    <input type="date">
-                </div>
-                <button id="boton_buscar_fecha">Buscar</button>
-                <p class="por_lugar">
+                <form class="buscar_por_fecha">
+                    <div class="fecha_desde">
+                        <label>Desde
+                            <input type="date" name="fecha_desde" max="fecha_hasta" required>
+                        </label>
+                    </div>
+                    <div class="fecha_hasta">
+                        <label>Hasta
+                            <input type="date" name="fecha_hasta" min="fecha_desde" required>
+                        </label>
+                    </div>
+                <button id="boton_buscar_fecha" type="submit">Buscar</button>
+                </form>
+                <p class="buscar_por">
                     Por lugar:
                 </p>
-                <input class="input_buscar_por_lugar" type="search">
-                <button id="boton_buscar_lugar">Buscar</button>
+                <form class="buscar_por_lugar" action="">
+                    <input class="input_buscar_por_lugar" type="search" name="input_buscar_por_lugar" maxlength="30" required>
+                    <button type="submit" id="boton_buscar_lugar">Buscar</button>
+                </form>
             </div>
         </section>
         <section class="cards">
@@ -67,24 +74,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -98,24 +106,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -129,24 +138,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -160,24 +170,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -191,24 +202,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -222,24 +234,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -253,24 +266,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -284,24 +298,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -315,24 +330,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -346,24 +362,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
@@ -377,24 +394,25 @@
                 </a>
                 <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <form class="reserva">
+                    <form class="reserva" action="">
                         <div class="personas_fecha">
-                            <label for="personas">👤</label>
-                            <input type="number" list="cantidad" min="1" max="10">
-                            <datalist id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                            <label for="fecha">📅</label>
-                            <input type="date" name="fecha" id="fecha">
+                            <label>👤:
+                                <select name="personas_reserva">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                            <label>📅:
+                                <input type="date" name="fecha_reserva" required>
+                            </label>
                         </div>
                         <button type="submit" class="reservar">Reservar</button>
                     </form>
