@@ -43,11 +43,11 @@
                     Por fecha:
                 </p>
                 <div class="fecha_desde">
-                    <label class="input_fecha" for="inicio">Desde</label>
+                    <label class="input_fecha" for="fecha_inicio">Desde</label>
                     <input type="date">
                 </div>
                 <div class="fecha_hasta">
-                    <label class="input_fecha" for="inicio">Hasta</label>
+                    <label class="input_fecha" for="fecha_fin">Hasta</label>
                     <input type="date">
                 </div>
                 <button id="boton_buscar_fecha">Buscar</button>
@@ -60,135 +60,344 @@
         </section>
         <section class="cards">
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/la_boca2.jpg" alt="La Boca">
                     <h1 class="card_titulo">La Boca</h1>
                     <p class="card_detalle">Paseo por el barrio y visita al estadio Alberto J. Armando</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/corrientes.jpg" alt="Corrientes">
                     <h1 class="card_titulo">Av. Corrientes</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/bici.jpg" alt="Paseo en bici">
                     <h1 class="card_titulo">Paseo en bicicleta</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/plaza_de_mayo.jpg" alt="Plaza de mayo">
                     <h1 class="card_titulo">Plaza de Mayo</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/puerto_madero.jpg" alt="Puerto Madero">
                     <h1 class="card_titulo">Puerto Madero</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/Mercado-San-Telmo-Buenos-aires.jpg" alt="San Telmo">
                     <h1 class="card_titulo">San Telmo</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/recs_dia3.jpg" alt="Reserva Ecológica">
                     <h1 class="card_titulo">Reserva ecológica en bicicleta</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/recs_noche.jpg" alt="Reserva de noche">
                     <h1 class="card_titulo">Reserva ecológica a la luz de la luna</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/tango.jpg" alt="Tango">
                     <h1 class="card_titulo">Show de tango</h1>
                     <p class="card_detalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus ea quidem libero nostrum minus dignissimos nihil, corrupti a in quisquam voluptatibus ad natus aperiam sequi fugit qui, illo maxime?</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/atis.jpeg" alt="Bares de San Telmo">
                     <h1 class="card_titulo">Bares del Sur</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
             <div class="tour_card">
-                <a class="card_ancla" href="./pages/contacto.html">
+                <a class="card_vinculo" href="./pages/contacto.html">
                     <img class="card_img" src="./assets/img/teatro_colon2.jpg" alt="Teatro Colón">
                     <h1 class="card_titulo">Teatro Colón</h1>
                     <p class="card_detalle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repellendus nostrum necessitatibus deleniti maiores quae nobis! Quos totam blanditiis illo rem maxime adipisci a obcaecati dignissimos eius quibusdam, accusantium minus.</p>
                 </a>
-                <div class="reserva">
+                <div class="precio_reserva">
                     <h2 class="precio">50.000 ARS</h2>
-                    <h2 class="pasajeros">Pasajeros</h2>
-                    <button class="reservar">Reservar</button>
+                    <form class="reserva">
+                        <div class="personas_fecha">
+                            <label for="personas">👤</label>
+                            <input type="number" list="cantidad" min="1" max="10">
+                            <datalist id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                            <label for="fecha">📅</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <button type="submit" class="reservar">Reservar</button>
+                    </form>
                 </div>
             </div>
         </section>
