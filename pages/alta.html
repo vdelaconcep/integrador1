@@ -6,7 +6,13 @@
     <title>BAIRES SUR - Alta</title>
 
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/alta.css">
+    <link rel="stylesheet" href="../css/paginas.css">
+
+    <style>
+        main {
+            background: url(../assets/img/alta.jpg) no-repeat;
+        }
+    </style>
 
 </head>
 <body>
@@ -26,44 +32,51 @@
     </header>
     <main>
 
-        <h2 class="titulo_alta">
-            Alta de paseo
-        </h2>
-        <form class="formulario_ingreso" action="">
-            <label>Nombre: <br>
-                <input type="text" name="nombre" maxlength="45" required>
-            </label>
-            <label>Precio (ARS): <br>
-                <input type="number" name="precio" max="1000000" required>
-            </label>
-            <label>Fechas disponibles: <br>
-                <input type="date" name="fechas_disponibles" required>
-            </label>
-            <label>Horarios disponibles: <br>
-                <input type="time" name="horario1" required> / <input type="time" name="horario2"> / <input type="time" name="horario3">
-            </label>
-            <label>Lugares disponibles: <br>
-                <input type="number" name="lugares_disponibles" max="30" min="10" required>
-            </label>
-            <label>Descripción corta: <br>
-                <textarea name="descripcion_corta" rows="10" cols="34" maxlength="200" wrap="soft" required>
-                </textarea>
-            </label>
-            <label>Descripción larga: <br>
-                <textarea name="descripcion_larga" rows="15" cols="34" maxlength="500" wrap="soft" required>
-                </textarea>
-            </label>
-            <label>Foto tarjeta: <br>
-                <input type="file" name="foto_tarjeta" accept=".png, .jpg, .jpeg">
-            </label>
-            <label>Fotos adicionales: <br>
-                <input type="file" name="fotos_adicionales" accept=".png, .jpg, .jpeg" multiple>
-            </label>
-            <div class="botonera_alta">
-                <button class="boton_alta" type="reset">Borrar datos</button>
-                <button class="boton_alta" type="submit">Enviar</button>
-            </div>
-        </form>
+        <h1 class="titulo_pagina">
+            BAIRES SUR
+        </h1>
+        <div class="alta">
+            <h2 class="subtitulo_pagina">
+                Alta de recorrido
+            </h2>
+            <form class="formulario_ingreso" action="">
+                <div class="primera_columna">
+                    <label>Nombre: <br>
+                        <input class="expandir_input" type="text" name="nombre" maxlength="45" required>
+                    </label>
+                    <label>Precio (ARS): <br>
+                        <input class="expandir_input" type="number" name="precio" max="1000000" required>
+                    </label>
+                    <div class="fecha_hora">
+                        <label>Fechas: <br>
+                            <input type="date" name="fechas_disponibles" required>
+                        </label>
+                        <label class="hora_alta">Horario: <br>
+                            <input type="time" name="horario" required>
+                        </label>
+                    </div>
+                    <label>Lugares disponibles: <br>
+                        <input type="number" name="lugares_disponibles" max="30" min="10" required>
+                    </label>
+                    <label>Descripción corta: <br>
+                        <textarea name="descripcion_corta" rows="5" cols="34" maxlength="200" wrap="soft" required>
+                        </textarea>
+                    </label>
+                </div>
+                <div class="segunda_columna">
+                    <label>Descripción larga: <br>
+                        <textarea name="descripcion_larga" rows="10" cols="34" maxlength="500" wrap="soft" required>
+                        </textarea>
+                    </label>
+                    <label>Fotos: <br>
+                        <input type="file" name="fotos" accept=".png, .jpg, .jpeg" multiple>
+                    </label>
+                    <div class="botonera_alta">
+                        <button class="boton_alta" type="reset">Borrar datos</button>
+                        <button class="boton_alta" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
     </main>
     <footer>
         <p class="texto_footer">
