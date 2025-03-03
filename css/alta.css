@@ -1,0 +1,24 @@
+main {
+    border: 4px solid #98B2CF;
+    margin: 3%;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 3%;
+}
+
+.botonera {
+    margin: 4%;
+    text-align: end;
+}
+
+.boton {
+    height: 30px;
+    padding-left: 2% ;
+    padding-right: 2%;
+    border-radius: 5px;
+    background-color: #00293F;
+    color: white;
+}

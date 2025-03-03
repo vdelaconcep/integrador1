@@ -48,6 +48,8 @@ nav {
     border-bottom: 2px solid white;
 }
 
+/* Adaptación de la barra de navegación a menú de hamburguesa en pantallas más chicas */
+
 .menu_responsivo {
     align-self: center;
     width: 40px;
