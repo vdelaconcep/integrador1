@@ -25,11 +25,15 @@
         </nav>
     </header>
     <main>
-        <form action="">
+
+        <h1 class="titulo_alta">
+            Alta de paseo
+        </h1>
+        <form class="formulario_ingreso" action="">
             <label>Nombre: <br>
                 <input type="text" name="nombre" maxlength="45" required>
             </label>
-            <label>Precio: <br>
+            <label>Precio (ARS): <br>
                 <input type="number" name="precio" max="1000000" required>
             </label>
             <label>Fechas disponibles: <br>
@@ -39,14 +43,14 @@
                 <input type="time" name="horario1" required> / <input type="time" name="horario2"> / <input type="time" name="horario3">
             </label>
             <label>Lugares disponibles: <br>
-                <input type="number" name="lugares_disponibles" max="20" required>
+                <input type="number" name="lugares_disponibles" max="30" min="10" required>
             </label>
             <label>Descripción corta: <br>
-                <textarea name="descripcion_corta" rows="10" cols="40" maxlength="200" wrap="soft" required>
+                <textarea name="descripcion_corta" rows="10" cols="34" maxlength="200" wrap="soft" required>
                 </textarea>
             </label>
             <label>Descripción larga: <br>
-                <textarea name="descripcion_larga" rows="15" cols="40" maxlength="500" wrap="soft" required>
+                <textarea name="descripcion_larga" rows="15" cols="34" maxlength="500" wrap="soft" required>
                 </textarea>
             </label>
             <label>Foto tarjeta: <br>
@@ -62,8 +66,17 @@
         </form>
     </main>
     <footer>
-        Footer de la página
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae illum neque deleniti voluptatibus molestias error, ut eveniet dolor, doloremque maxime et ipsa dolorum quia consequatur deserunt provident nostrum tempora reprehenderit!
+        <p class="texto_footer">
+            Baires Sur S.A. - Estados Unidos 456, Ciudad Autónoma de Buenos Aires
+        </p>
+        <p class="texto_footer">
+            Seguinos en las redes:
+        </p>
+        <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img class="rrss" src="../assets/img/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/home" title="Twitter" target="_blank"><img class="rrss" src="../assets/img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.youtube.com/" title="Youtube" target="_blank"><img class="rrss" src="../assets/img/youtube.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/?hl=es-la" title="Instagram" target="_blank"><img class="rrss" src="../assets/img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank"><img class="rrss" src="../assets/img/linkedin.png" alt="Linkedin"></a>
     </footer>
 </body>
 </html>

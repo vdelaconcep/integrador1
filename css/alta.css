@@ -1,17 +1,34 @@
-main {
+.titulo_alta {
+    background-color: #98B2CF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: fit-content;
+    padding: 1% 2%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.formulario_ingreso {
     border: 4px solid #98B2CF;
     margin: 3%;
+    margin-top: 0;
+    max-width: 400px;
     border-radius: 8px;
 }
 
 label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00293F;
     display: block;
-    margin: 3%;
+    margin: 2% 4%;
 }
 
 .botonera {
     margin: 4%;
-    text-align: end;
+    text-align: center;
 }
 
 .boton {
