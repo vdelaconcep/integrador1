@@ -91,6 +91,7 @@ main {
 
 .buscar_por {
     margin-left: 2%;
+    margin-top: 1%;
 }
 
 .buscar_por_fecha {
@@ -103,7 +104,9 @@ main {
 .buscar_por_fecha label {
     display: block;
     margin: 2%;
+    margin-bottom: 5px;
     text-align: center;
+    align-self: self-end;
 }
 
 .buscar_por_fecha input {
@@ -111,8 +114,8 @@ main {
 }
 
 .botonera_fecha {
-    align-self: center;
-    margin-top: 15px;
+    align-self: self-end;
+    margin-bottom: 3px;
 }
 
 .buscar_por_lugar {
@@ -135,7 +138,6 @@ main {
     width: 90px;
     background-color: #98B2CF;
     border-radius: 5px;
-    align-self: center;
 }
 
 /* Adaptación de cuadro de búsquda a las pantallas: */
