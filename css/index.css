@@ -79,12 +79,13 @@ main {
     display: flex;
     flex-direction: column;
     padding: 1.5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo_busqueda {
     margin-bottom: 1.5%;
     color: #98B2CF;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid white;
 }
 
@@ -137,13 +138,6 @@ main {
     align-self: self-end;
 }
 
-.buscar_por,
-.fecha_desde,
-.fecha_hasta {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
 #boton_buscar_lugar,
 #boton_buscar_fecha {
     margin-left: 5%;
@@ -152,7 +146,6 @@ main {
     padding-left: 1%;
     padding-right: 1%;
     background-color: #98B2CF;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
 }
 
@@ -263,5 +256,5 @@ main {
     width: 120px;
     height: 40px;
     margin: 2%;
-    padding: 0.5%;
+    padding: 0.3%;
 }

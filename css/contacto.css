@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Wide_Latin";
+    src: url(../fonts/Nexus_Font.TTF);
+}
+
+main {
+    background: url(../assets/img/contacto.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_contacto {
+    text-align: center;
+    padding: 2%;
+    font-family: "wide_latin";
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.contacto {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    min-width: 310px;
+    align-self: center;
+    margin-bottom: 2%;
+    padding: 1.5%;
+}
+
+.subtitulo_contacto {
+    color:#98B2CF;
+    border-bottom: 1px solid white;
+}
+
+.texto_contacto {
+    margin: 1.5% 0;
+}
+
+label {
+    display: block;
+    margin: 1.5% 0;
+}
+
+#cuadrito_comentarios {
+    width: 100%;
+}
+
+.botonera_contacto {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.boton_contacto {
+    height: 30px;
+    padding: 0 2%;
+    border-radius: 5px;
+    background-color:#98B2CF;
+}
+
+
+
