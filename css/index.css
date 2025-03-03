@@ -107,7 +107,7 @@ main {
 }
 
 .buscar_por_fecha input {
-    height: 30px;
+    height: 27px;
 }
 
 .botonera_fecha {
@@ -123,7 +123,8 @@ main {
 
 .input_buscar_por_lugar {
     display: block;
-    height: 30px;
+    align-self: center;
+    height: 27px;
     width: 60%;
 }
 
