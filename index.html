@@ -44,17 +44,15 @@
                     Por fecha:
                 </p>
                 <form class="buscar_por_fecha">
-                    <div class="fecha_desde">
-                        <label>Desde
-                            <input type="date" name="fecha_desde" max="fecha_hasta" required>
-                        </label>
+                    <label>Desde <br>
+                        <input type="date" name="fecha_desde" max="fecha_hasta" required>
+                    </label>
+                    <label>Hasta <br>
+                        <input type="date" name="fecha_hasta" min="fecha_desde" required>
+                    </label>
+                    <div class="botonera_fecha">
+                        <button id="boton_buscar_fecha" type="submit">Buscar</button>
                     </div>
-                    <div class="fecha_hasta">
-                        <label>Hasta
-                            <input type="date" name="fecha_hasta" min="fecha_desde" required>
-                        </label>
-                    </div>
-                <button id="boton_buscar_fecha" type="submit">Buscar</button>
                 </form>
                 <p class="buscar_por">
                     Por lugar:
