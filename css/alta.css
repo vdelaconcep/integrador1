@@ -1,3 +1,10 @@
+main {
+    background: url(../assets/img/alta.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+}
+
 .titulo_alta {
     background-color: #98B2CF;
     color: black;
