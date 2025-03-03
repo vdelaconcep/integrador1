@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Wide_Latin";
+    src: url(../fonts/Nexus_Font.TTF);
+}
+
+main {
+    background: url(../assets/img/nosotros.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_nosotros {
+    text-align: center;
+    padding: 2%;
+    font-family: "wide_latin";
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.nosotros {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    min-width: 310px;
+    align-self: center;
+    margin-bottom: 2%;
+    padding: 1.5%;
+}
+
+.subtitulo_nosotros {
+    color: #98B2CF;
+    border-bottom: 1px solid white;
+}
+
+.texto_nosotros {
+    margin: 2%;
+}
+
+.fotos_nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos_nosotros img {
+    width: 300px;
+    height: 200px;
+    margin: 1%;
+    border-radius: 5px;
+    border: 1px solid white;
+}
