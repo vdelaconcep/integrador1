@@ -163,7 +163,7 @@ main {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .busqueda {
         width: 80%;
     }
