@@ -91,13 +91,12 @@ main {
 
 .buscar_por {
     margin-left: 2%;
-    margin-top: 1%;
 }
 
 .buscar_por_fecha {
     align-self: center;
     width: 90%;
-    margin: 2% 0;
+    margin: 1% 0;
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
@@ -106,7 +105,7 @@ main {
 .buscar_por_fecha label {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -125,7 +124,7 @@ main {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin: 2% 0;
+    margin: 1% 0;
 }
 
 .input_buscar_por_lugar {
@@ -179,6 +178,10 @@ main {
     .buscar_por_fecha {
         display: grid;
         grid-template: 50% 50% / 60% 40%;
+    }
+
+    .buscar_por_fecha label {
+        align-items: end;
     }
 
     .fecha_desde {
