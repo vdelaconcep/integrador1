@@ -54,17 +54,17 @@ main {
 
 /* Adaptación de título y subtítulo a las pantallas: */
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     .titulo_subtitulo_principal {
             font-size: 13px;
         }
 }
 
-@media (max-width: 465px) {
+/* @media (max-width: 465px) {
     .titulo_subtitulo_principal {
         font-size: 11px;
     }
-}
+} */
 
 /* Cuadro de búsqueda: */
 
@@ -212,7 +212,7 @@ main {
 
 .tour_card {
     display: grid;
-    grid-template-rows: 1fr 175px;
+    grid-template-rows: 1fr 180px;
     margin: 1.5%;
     max-width: 300px;
     border: 1.5px solid;
