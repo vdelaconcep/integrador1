@@ -75,6 +75,7 @@ label {
 
 .texto_nosotros {
     margin: 2%;
+    text-shadow: 2px 1px black;
 }
 
 .fotos_nosotros {
