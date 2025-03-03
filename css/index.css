@@ -161,6 +161,12 @@ main {
     }
 }
 
+@media (max-height: 400px) and (orientation: landscape) {
+    .banner {
+        height: 110vh;
+    }
+}
+
 /* Sección tarjetas */
 
 .cards {
