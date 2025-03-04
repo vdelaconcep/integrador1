@@ -95,13 +95,13 @@ label {
 /* Específicos para alta */
 
 .alta {
-    width: auto;
+    width: 578px;
 }
 
 .formulario_ingreso {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .primera_columna, .segunda_columna {
@@ -141,7 +141,7 @@ label {
 @media (max-width:580px) {
 
     .alta {
-        width: 300px;
+        width: 310px;
     }
 
     .primera_columna {
@@ -150,5 +150,6 @@ label {
 
     .formulario_ingreso {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
