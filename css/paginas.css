@@ -117,7 +117,10 @@ label {
 
 .fecha_hora {
     display: flex;
+    justify-content: flex-start;
+    width: 80%;
 }
+
 
 .hora_alta {
     margin-left: 20px;
