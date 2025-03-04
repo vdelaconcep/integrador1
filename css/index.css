@@ -17,7 +17,7 @@ main {
 /* Banner con título y cuadro de búsqueda: */
 
 .banner {
-    background: url(../assets/img/background_busqueda.jpg) no-repeat;
+    background: url(../assets/img/banner_index.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     width: 100%;
@@ -159,7 +159,7 @@ main {
 
 .tour_card {
     display: grid;
-    grid-template-rows: 1fr 180px;
+    grid-template-rows: 1fr 160px;
     margin: 1.5%;
     max-width: 300px;
     border: 1.5px solid;
