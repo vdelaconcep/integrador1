@@ -205,7 +205,8 @@ main {
 }
 
 .card_reloj {
-    width: 30px;
+    width: 20px;
+    margin-right: 5px;
 }
 
 .horario_precio_reserva {
