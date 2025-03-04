@@ -10,7 +10,7 @@
 
     <style>
         main {
-            background: url(../assets/img/alta.jpg);
+            background: url(../assets/img/alta.jpg) no-repeat;
             background-size: cover;
             background-position: bottom center;
             width: 100%;
@@ -33,7 +33,7 @@
         </div>
         </nav>
     </header>
-    <main>
+    <main class="main_alta">
         <h1 class="titulo_pagina">
             BAIRES SUR
         </h1>
@@ -49,26 +49,24 @@
                     <label>Precio (ARS): <br>
                         <input class="expandir_input" type="number" name="precio" max="1000000" required>
                     </label>
-                    <div class="fecha_hora">
-                        <label>Fechas: <br>
-                            <input type="date" name="fechas_disponibles" required>
-                        </label>
-                        <label class="hora_alta">Horario: <br>
+                    <label>Fechas: <br>
+                        <input type="date" name="fechas_disponibles" required>
+                    </label>
+                    <div class="hora_lugares">
+                        <label>Horario: <br>
                             <input type="time" name="horario" required>
                         </label>
+                        <label id="alta_lugares">Lugares: <br>
+                            <input type="number" name="lugares_disponibles" max="20" min="10" required>
+                        </label>
                     </div>
-                    <label>Lugares disponibles: <br>
-                        <input type="number" name="lugares_disponibles" max="30" min="10" required>
-                    </label>
                     <label>Descripción corta: <br>
-                        <textarea name="descripcion_corta" rows="5" cols="34" maxlength="200" wrap="soft" required>
-                        </textarea>
+                        <textarea name="descripcion_corta" rows="5" cols="34" maxlength="200" wrap="soft" required></textarea>
                     </label>
                 </div>
                 <div class="segunda_columna">
                     <label>Descripción larga: <br>
-                        <textarea name="descripcion_larga" rows="10" cols="34" maxlength="500" wrap="soft" required>
-                        </textarea>
+                        <textarea name="descripcion_larga" rows="10" cols="34" maxlength="500" wrap="soft" required></textarea>
                     </label>
                     <label>Fotos: <br>
                         <input type="file" name="fotos" accept=".png, .jpg, .jpeg" multiple>

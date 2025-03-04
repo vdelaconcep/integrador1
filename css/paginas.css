@@ -115,15 +115,14 @@ label {
     width: 100%;
 }
 
-.fecha_hora {
+.hora_lugares {
     display: flex;
     justify-content: flex-start;
     width: 80%;
 }
 
-
-.hora_alta {
-    margin-left: 20px;
+#alta_lugares {
+    margin-left: 15px;
 }
 
 .botonera_alta {
